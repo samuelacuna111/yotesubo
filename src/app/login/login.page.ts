@@ -13,7 +13,7 @@ export class LoginPage {
   constructor(private navCtrl: NavController) {}
 
   onLogin() {
-    if (this.email === 'admin@example.com' && this.password === 'admin123') {
+    if (this.email === 'admin' && this.password === 'admin') {
       // Si el login es exitoso, redirigir a la página principal
       this.navCtrl.navigateRoot('/home');
     } else {
