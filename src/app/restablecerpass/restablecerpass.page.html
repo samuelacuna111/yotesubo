@@ -1,19 +1,27 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Restablecer Contraseña</ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content>
-  <ion-list>
-    <ion-item>
-      <ion-input position="floating" label="Default input"></ion-input>
-    </ion-item>
-  
-    <ion-item>
-      <ion-input position="floating" label="Input with placeholder" placeholder="Enter company name"></ion-input>
-    </ion-item>
-  </ion-list>
-  
+<ion-content class="login-bg" fullscreen>
+  <div class="login-logo">
+  </div>
 
+  
+    <ion-card style="margin-top: 100px;">
+      <ion-card-header>
+        <ion-card-title>Reestablecer Contraseña</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <form (ngSubmit)="onLogin()">
+          <ion-item lines="none" class="input-item">
+            <ion-label position="floating">Ingrese Contraseña</ion-label>
+            <ion-input [(ngModel)]="email" name="email" type="email" required></ion-input>
+          </ion-item>
+
+          <ion-item lines="none" class="input-item">
+            <ion-label position="floating">Reingrese Contraseña</ion-label>
+            <ion-input [(ngModel)]="password" name="password" type="password" required></ion-input>
+          </ion-item> 
+          <ion-button href="/restablecerpass" expand="block">
+            Reestablecer contraseña  
+          </ion-button>      
+        </form>     
+      </ion-card-content>
+    </ion-card>
 </ion-content>
-
