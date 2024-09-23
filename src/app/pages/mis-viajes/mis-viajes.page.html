@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-capitalize ion-text-center" mode="md">Mis Viajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-list>
+    <!-- Viaje en Proceso -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Concepción / Mall del Centro</ion-card-title>
+        <ion-card-subtitle>Fecha: 2024-09-30 10:00 AM</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Estado: <span class="estado aceptado">Disponible</span></p>
+        <ion-button expand="full" color="primary" href="/vista-estado-viaje">
+          Ver Detalle
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Viaje Terminado -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Concepción / Parque Ecuador</ion-card-title>
+        <ion-card-subtitle>Fecha: 2024-09-25 08:00 AM</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Estado: <span class="estado terminado">Terminado</span></p>
+        <ion-button expand="full" color="primary" href="/vista-estado-viaje">
+          Ver Detalle
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- Viaje Cancelado -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Concepción / Universidad de Concepción</ion-card-title>
+        <ion-card-subtitle>Fecha: 2024-09-20 09:00 AM</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>Estado: <span class="estado cancelado">Cancelado</span></p>
+        <ion-button expand="full" color="primary" href="/vista-estado-viaje">
+          Ver Detalle
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
+
+<style>
+  .estado {
+    font-weight: bold;
+  }
+  
+  .aceptado {
+    color: green;
+  }
+
+  .cancelado {
+    color: red;
+  }
+
+  .retrasado {
+    color: orange;
+  }
+
+  .denegado {
+    color: darkred;
+  }
+
+  .terminado {
+    color: blue;
+  }
+</style>

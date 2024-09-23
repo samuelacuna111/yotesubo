@@ -1,0 +1,11 @@
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Espaciado opcional */
+  }
+  
+  .image-container img {
+    max-width: 80%; /* Ajusta el tamaño según lo necesites */
+    border-radius: 50%; /* Hace la imagen redonda */
+  }
+  
