@@ -29,6 +29,8 @@ const routes: Routes = [
     path: 'vista-estado-viaje',
     loadChildren: () => import('./vista-estado-viaje/vista-estado-viaje.module').then( m => m.VistaEstadoViajePageModule)
   },
+
+
 ];
 
 
