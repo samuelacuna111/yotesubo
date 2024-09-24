@@ -1,0 +1,26 @@
+.center-content {
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center;    /* Centra horizontalmente */
+  height: 100%;           /* Ocupa toda la altura */
+  padding: 20px;          /* Espacio alrededor */
+  box-sizing: border-box; /* Incluye el padding en el tamaño total */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column; /* Apila los botones uno encima del otro */
+  align-items: center;     /* Centra los botones horizontalmente */
+  width: 100%;             /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+.large-button {
+  margin: 30px;
+  font-size: 20px; /* Tamaño de fuente */
+  height: 60px; /* Altura de los botones */
+  width: 80%; /* Ancho del botón ajustado */
+}
+.end {
+  margin-top: auto; /* Empuja el botón "Salir" hacia el final */
+}

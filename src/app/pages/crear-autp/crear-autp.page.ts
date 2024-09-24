@@ -1,29 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-crearviaje',
-  templateUrl: './crearviaje.page.html',
-  styleUrls: ['./crearviaje.page.scss'],
+  selector: 'app-crear-autp',
+  templateUrl: './crear-autp.page.html',
+  styleUrls: ['./crear-autp.page.scss'],
 })
-export class CrearviajePage implements OnInit {
+export class CrearAutpPage implements OnInit {
 
-  today: string;
+  constructor() { }
 
-  constructor() {
-    const now = new Date();
-    // Formato: YYYY-MM-DDTHH:mm
-    this.today = now.toISOString();
-  }
   ngOnInit() {
   }
-<<<<<<< HEAD
-  
-  customCounterFormatter(inputLength: number, maxLength: number) {
-    return `${maxLength - inputLength} characters remaining`;
-  }
-=======
 
->>>>>>> SamuelAcuña
 
   incrementSeats() {
     const input = document.getElementById('asientosDisponibles') as HTMLInputElement;
@@ -40,6 +28,4 @@ export class CrearviajePage implements OnInit {
       input.value = (currentValue - 1).toString();
     }
   }
-  
-
 }
