@@ -1,13 +1,22 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>restablecerpass</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="login-bg" fullscreen>
+  <div class="login-logo">
+  </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">restablecerpass</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card style="margin-top: 100px;">
+    <ion-card-header>
+      <ion-card-title>Restablecer Contraseña</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form (ngSubmit)="onSendCode()">
+        <ion-item lines="none" class="input-item">
+          <ion-label position="floating">Ingrese correo para enviar el código:</ion-label>
+          <ion-input [(ngModel)]="email" name="email" type="email" required></ion-input>
+        </ion-item>
+
+        <ion-button type="submit" expand="block">
+          Enviar código  
+        </ion-button>      
+      </form>     
+    </ion-card-content>
+  </ion-card>
 </ion-content>
