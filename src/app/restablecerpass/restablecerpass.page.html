@@ -2,22 +2,21 @@
   <div class="login-logo">
   </div>
 
-  
-    <ion-card style="margin-top: 100px;">
-      <ion-card-header>
-        <ion-card-title>Restablecer Contraseña</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <form (ngSubmit)="onLogin()">
-          <ion-item lines="none" class="input-item">
-            <ion-label position="floating">Ingrese Correo</ion-label>
-            <ion-input [(ngModel)]="email" name="email" type="email" required></ion-input>
-          </ion-item>
+  <ion-card style="margin-top: 100px;">
+    <ion-card-header>
+      <ion-card-title>Restablecer Contraseña</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form (ngSubmit)="onSendCode()">
+        <ion-item lines="none" class="input-item">
+          <ion-label position="floating">Ingrese correo para enviar el código:</ion-label>
+          <ion-input [(ngModel)]="email" name="email" type="email" required></ion-input>
+        </ion-item>
 
-          <ion-button href="/ingreso-codigo" expand="block">
-            Enviar codigo  
-          </ion-button>      
-        </form>     
-      </ion-card-content>
-    </ion-card>
+        <ion-button type="submit" expand="block">
+          Enviar código  
+        </ion-button>      
+      </form>     
+    </ion-card-content>
+  </ion-card>
 </ion-content>
