@@ -1,0 +1,109 @@
+<ion-header >
+  <ion-toolbar color="secondary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+      
+    </ion-buttons>
+    <ion-title class="ion-text-capitalize ion-text-center" mode="md"> Viajes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Nuevo viaje</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        
+          <ion-select interface="popover" slot="start" placeholder="Comuna">
+            <ion-select-option value="Concepción">Concepción</ion-select-option>
+            <ion-select-option value="Talcahuano">Talcahuano</ion-select-option>
+            <ion-select-option value="San Pedro de la Paz">San Pedro de la Paz</ion-select-option>
+            <ion-select-option value="Chiguayante">Chiguayante</ion-select-option>
+            <ion-select-option value="Hualpén">Hualpén</ion-select-option>
+            <ion-select-option value="Penco">Penco</ion-select-option>
+            <ion-select-option value="Lota">Lota</ion-select-option>
+            <ion-select-option value="Coronel">Coronel</ion-select-option>
+            <ion-select-option value="Talcahuano">Talcahuano</ion-select-option>
+            <ion-select-option value="Florida">Florida</ion-select-option>
+            <ion-select-option value="Santa Juana">Santa Juana</ion-select-option>
+            <ion-select-option value="Santo Domingo">Santo Domingo</ion-select-option>
+            <ion-select-option value="Bío Bío">Bío Bío</ion-select-option>
+          </ion-select>
+       
+      </ion-item>
+      <ion-item >
+        <ion-select interface="popover" slot="start" placeholder="Sector">
+          <ion-select-option value="Plaza de la Independencia">Plaza de la Independencia</ion-select-option>
+          <ion-select-option value="Catedral de Concepción">Catedral de Concepción</ion-select-option>
+          <ion-select-option value="Parque Ecuador">Parque Ecuador</ion-select-option>
+          <ion-select-option value="Universidad de Concepción">Universidad de Concepción</ion-select-option>
+          <ion-select-option value="Mall Plaza El Trébol">Mall Plaza El Trébol</ion-select-option>
+          <ion-select-option value="Cerro Caracol">Cerro Caracol</ion-select-option>
+          <ion-select-option value="Barrio Universitario">Barrio Universitario</ion-select-option>
+          <ion-select-option value="Paseo Peatonal">Paseo Peatonal</ion-select-option>
+          <ion-select-option value="Sector Costanera">Sector Costanera</ion-select-option>
+        </ion-select>
+      </ion-item>
+      
+      <ion-item>
+        <ion-datetime displayFormat="MMM DD, YYYY HH:mm" min="{{ today }}"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label >Seleccionar Auto</ion-label>
+        <ion-select slot="end" value="KKCK69" >
+          <ion-select-option  value="KKCK69">
+            <ion-item>
+              <ion-avatar slot="start">
+                <img src="assets/img/logo.png" />
+              </ion-avatar>
+              <ion-label>
+                <h2>KKCK69</h2>
+              </ion-label>
+            </ion-item>
+          </ion-select-option>
+          <ion-select-option value="ABC123">
+            <ion-item>
+
+              <ion-label >
+                <h2>ABC123</h2>
+              </ion-label>
+            </ion-item>
+          </ion-select-option>
+          <!-- Agrega más autos según sea necesario -->
+        </ion-select>
+      </ion-item>
+
+      <ion-item>
+        <ion-label >Asientos Disponibles</ion-label>
+        <ion-input slot="end" type="number" value="1" min="1" max="10" id="asientosDisponibles" readonly></ion-input>
+        <ion-buttons slot="end">
+          <ion-button (click)="incrementSeats()">
+            <ion-icon name="arrow-up"></ion-icon>
+          </ion-button>
+          <ion-button (click)="decrementSeats()">
+            <ion-icon name="arrow-down"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Precio</ion-label>
+       
+        <ion-input
+          id="custom-input"
+          [counter]="true"
+          maxlength="5"
+          [counterFormatter]="customCounterFormatter"
+        ></ion-input>
+      </ion-item>
+
+      <ion-button expand="full">Ofrecer Viaje</ion-button>
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+<style>
+  
+</style>

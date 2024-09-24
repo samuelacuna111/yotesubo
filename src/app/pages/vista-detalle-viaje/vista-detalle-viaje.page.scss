@@ -1,0 +1,13 @@
+ion-card {
+    width: 100%;
+    max-width: 400px; /* Ajusta este valor según el tamaño que prefieras */
+  }
+  
+  @media (min-width: 768px) {
+    ion-card {
+        align-content: center;
+        width: 60%; /* Ancho del card en pantallas más grandes */
+        max-width: 600px; /* Máximo ancho */
+    }
+  }
+ 
