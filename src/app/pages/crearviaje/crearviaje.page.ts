@@ -16,14 +16,11 @@ export class CrearviajePage implements OnInit {
   }
   ngOnInit() {
   }
-<<<<<<< HEAD
+
   
   customCounterFormatter(inputLength: number, maxLength: number) {
     return `${maxLength - inputLength} characters remaining`;
   }
-=======
-
->>>>>>> SamuelAcuña
 
   incrementSeats() {
     const input = document.getElementById('asientosDisponibles') as HTMLInputElement;
