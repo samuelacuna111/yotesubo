@@ -7,14 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { VistaDetalleViajePageRoutingModule } from './vista-detalle-viaje-routing.module';
 
 import { VistaDetalleViajePage } from './vista-detalle-viaje.page';
+import { InAppBrowser } from '@awesome-cordova-plugins/in-app-browser/ngx';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    VistaDetalleViajePageRoutingModule
+    VistaDetalleViajePageRoutingModule,
   ],
-  declarations: [VistaDetalleViajePage]
+  declarations: [VistaDetalleViajePage],
+  providers: [
+    InAppBrowser  // Asegúrate de registrar InAppBrowser aquí
+  ]
 })
 export class VistaDetalleViajePageModule {}

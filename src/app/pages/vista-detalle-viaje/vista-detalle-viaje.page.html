@@ -56,10 +56,10 @@
             <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="Ocupante 1" />
           </ion-avatar>
           <ion-label>Luis Ilufin </ion-label>
-          <ion-button fill="clear">
+          <ion-button fill="clear" (click)="openWhatsApp()">
             <ion-icon name="logo-whatsapp"></ion-icon>
           </ion-button>
-          <ion-button fill="clear" slot="end">
+          <ion-button fill="clear" slot="end" (click)="openCallApp()">
             <ion-icon name="call"></ion-icon>
           </ion-button>
         </ion-item>
@@ -96,39 +96,9 @@
       </ion-list>
     </ion-card-content>
   </ion-card>
-  <ion-button expand="full" color="primary" class="ion-margin-top">
+  <ion-button expand="full" color="primary" class="ion-margin-top" href="/vista-estado-viaje">
     Pedir Viaje
   </ion-button>
-</ion-content>
 
-<style>
-  .viaje-imagen {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .estado {
-    font-weight: bold;
-  }
   
-  .aceptado {
-    color: green;
-  }
-
-  .cancelado {
-    color: red;
-  }
-
-  .retrasado {
-    color: orange;
-  }
-
-  .denegado {
-    color: darkred;
-  }
-
-  .terminado {
-    color: blue;
-  }
-</style>
+</ion-content>

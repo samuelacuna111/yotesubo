@@ -10,4 +10,32 @@ ion-card {
         max-width: 600px; /* Máximo ancho */
     }
   }
- 
+  .viaje-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .estado {
+    font-weight: bold;
+  }
+  
+  .aceptado {
+    color: green;
+  }
+
+  .cancelado {
+    color: red;
+  }
+
+  .retrasado {
+    color: orange;
+  }
+
+  .denegado {
+    color: darkred;
+  }
+
+  .terminado {
+    color: blue;
+  }
