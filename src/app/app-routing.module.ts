@@ -48,6 +48,10 @@ const routes: Routes = [
     path: 'detalleviaje-conductor',
     loadChildren: () => import('./pages/detalleviaje-conductor/detalleviaje-conductor.module').then( m => m.DetalleviajeConductorPageModule)
   },
+  {
+    path: 'registro-usuario',
+    loadChildren: () => import('./pages/registro-usuario/registro-usuario.module').then( m => m.RegistroUsuarioPageModule)
+  },
 
 
 
