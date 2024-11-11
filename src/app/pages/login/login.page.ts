@@ -23,7 +23,7 @@ export class LoginPage {
         this.showToast('Inicio de sesion exitoso');
         this.navCtrl.navigateForward('/home');
       }).catch((error) => {
-        this.showToast('Error al iniciar sesion');
+        this.showToast(`Error al iniciar sesion {{error}}`);
       });
   }
 
